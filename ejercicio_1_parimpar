@@ -1,0 +1,27 @@
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  
+  readline.question('Por favor, ingresa un número: ', numero => {
+    if (parseInt(numero) % 2 === 0) {
+      console.log('El número es par.');
+    } else {
+      console.log('El número es impar.');
+    }
+    readline.close();
+  });
+
+Inicio
+    Pedir al usuario que ingrese un número
+    Leer el número ingresado y guardarlo en una variable llamada 'numero'
+    Si 'numero' módulo 2 es igual a 0 entonces
+        Informar al usuario que el número es par
+    De lo contrario
+        Informar al usuario que el número es impar
+Fin
+
+Este script utiliza el módulo readline de Node.js para interactuar con el usuario a través de la consola.
+El usuario debe ingresar un número y luego verificar si es par o impar utilizando el operador módulo (%).
+Si el resultado es cero, el número es par; de lo contrario, es impar.
+Luego, el script informa al usuario sobre el resultado.
